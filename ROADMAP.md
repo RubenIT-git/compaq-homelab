@@ -1,6 +1,6 @@
 # 🚀 Roadmap de Infraestructura: Fase 2 y Escalabilidad
 
-![Roadmap Diagram](./assets/roadmap-diagram.png)
+![Roadmap Diagram](https://github.com/RubenIT-git/compaq-homelab/blob/main/assets/Gemini_Generated_Image_km8wodkm8wodkm8w.png)
 
 Este documento detalla la **visión de futuro** y la hoja de ruta para la evolución técnica de mi Home Lab. "Todo está para el futuro".
 
