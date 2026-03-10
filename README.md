@@ -1,6 +1,6 @@
 # 🚀 Home Lab: Compaq CQ2000 Bare Metal Server
 
-![Terminal de Ubuntu](./assets/ee25ccd8-95b3-475a-800c-423089b5ef1f.jpg)
+![Terminal de Ubuntu](https://github.com/RubenIT-git/compaq-homelab/blob/main/assets/64dcce9b-47d0-4858-a5a5-a051cc265922.jpeg)
 
 Este proyecto documenta la transformación de un **HP Compaq CQ2000** (2 núcleos, 12GB RAM DDR3) de hardware en desuso a un servidor doméstico de alta disponibilidad. "Todo está para el futuro".
 
@@ -98,3 +98,4 @@ restic -r /mnt/backup_drive check
 
 
 Nota de Ingeniería: La consistencia en el mantenimiento es lo que diferencia a un "entusiasta" de un "administrador de sistemas". Documentación creada por RubenIT-git para su portafolio profesional.
+
