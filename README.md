@@ -47,3 +47,56 @@ Acceso remoto garantizado mediante la IP fija de Tailscale (100.x.x.x), permitie
 
 Documentación creada por RubenIT-git para su portafolio profesional.
 
+
+## 🕰️ Análisis de Vida Útil: Maximizando el Retorno de Inversión (ROI) Tecnológico
+
+Este proyecto constituye un caso de estudio sobre la **extensión radical del ciclo de vida del hardware**. Al rescatar el Compaq CQ2000 (lanzado originalmente alrededor de 2011-2012) y reimplementarlo como un servidor *Bare Metal* en 2024, hemos logrado los siguientes hitos de ingeniería y sostenibilidad:
+
+### 📊 Métricas de Extensión de Vida
+
+| Métrica | Estado Original (Estimado) | Estado Actual (Home Lab) | Impacto de Ingeniería |
+| :--- | :--- | :--- | :--- |
+| **Ciclo de Vida Útil** | ~5-7 años (como PC de escritorio) | **~12+ años (y contando)** | **Duplicación de la vida operativa** mediante cambio de rol a servidor de bajo consumo. |
+| **Rol de Hardware** | Estación de trabajo Windows (E-waste potencial) | **Nodo de Infraestructura Crítica Local** | Maximización de la utilidad marginal del hardware *legacy*. |
+| **Eficiencia de Software** | OS con GUI pesada (obsoleto para este HW) | **Ubuntu Server Bare Metal (Optimizado)** | Eliminación de *overhead* para dedicar recursos al 100% a microservicios Docker. |
+
+### 🧠 Lecciones Aprendidas y Estrategia de Futuro
+
+1.  **Sostenibilidad Real:** La forma más efectiva de *Green IT* no es comprar hardware "eficiente" nuevo, sino **no fabricar hardware nuevo**. Al extender la vida de este equipo, hemos evitado la huella de carbono asociada a la producción y transporte de un nuevo servidor.
+2.  **Ingeniería de Limitación:** Enfrentarse a las limitaciones de un procesador de 2 núcleos y memoria DDR3 obliga a realizar una **optimización de software rigurosa**, una habilidad crítica para cualquier administrador de sistemas.
+3.  **El Mantra:** Como solemos decir en este proyecto: **"Todo está para el futuro"**. Esta máquina es la prueba de que, con la administración correcta, el pasado técnico puede ser la base del futuro digital.
+
+---
+*Este análisis documenta el compromiso de RubenIT-git con la ingeniería eficiente y sostenible.*
+
+## 🔧 Guía de Mantenimiento Preventivo (SOP)
+
+Para asegurar que el Compaq CQ2000 siga operativo "para el futuro", he definido un **Standard Operating Procedure (SOP)** mensual. Estos comandos garantizan que el almacenamiento no se llene de basura y que los servicios estén protegidos.
+
+### 1. Actualización del Sistema y Seguridad
+Mantiene el kernel de Ubuntu y los paquetes de seguridad al día:
+```bash
+sudo apt update && sudo apt upgrade -y
+2. Higiene de Docker (Limpieza de Capas)
+Docker acumula imágenes antiguas y volúmenes huérfanos que pueden agotar el disco duro. Una vez al mes ejecuto:
+
+Bash
+docker system prune -a --volumes
+3. Salud de la Red (Pi-hole)
+Actualizar la lista de bloqueo (Gravity) y el software del contenedor:
+
+Bash
+pihole -g
+# O si usas Docker:
+docker pull pihole/pihole && docker-compose up -d
+4. Verificación de Backups (Restic)
+Comprobar que los datos en el disco externo no están corruptos:
+
+Bash
+restic -r /mnt/backup_drive check
+
+Nota de Ingeniería: La consistencia en el mantenimiento es lo que diferencia a un "entusiasta" de un "administrador de sistemas". Este servidor está diseñado para durar.
+
+
+
+
