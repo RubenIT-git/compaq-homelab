@@ -99,3 +99,6 @@ restic -r /mnt/backup_drive check
 
 Nota de Ingeniería: La consistencia en el mantenimiento es lo que diferencia a un "entusiasta" de un "administrador de sistemas". Documentación creada por RubenIT-git para su portafolio profesional.
 
+🚀 ¿Hacia dónde va este proyecto? Consulta mi Roadmap de Escalabilidad para ver los planes de la Fase 2 (Ryzen vs Raspberry Pi).
+
+
