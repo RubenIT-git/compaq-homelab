@@ -1,6 +1,6 @@
 # 🚀 Home Lab: Compaq CQ2000 Bare Metal Server
 
-![Terminal de Ubuntu](./assets/ee25ccd8-95b3-475a-800c-423089b5ef1f.jpg)
+![Terminal de Ubuntu](./assets64dcce9b-47d0-4858-a5a5-a051cc265922.jpeg)
 
 Este proyecto documenta la transformación de un **HP Compaq CQ2000** (2 núcleos, 12GB RAM DDR3) de hardware en desuso a un servidor doméstico de alta disponibilidad. "Todo está para el futuro".
 
@@ -46,3 +46,4 @@ Puertos abiertos: 67/udp y 68/udp en el firewall (ufw).
 Acceso remoto garantizado mediante la IP fija de Tailscale (100.x.x.x), permitiendo gestionar archivos y descargas desde cualquier red móvil 5G.
 
 Documentación creada por RubenIT-git para su portafolio profesional.
+
