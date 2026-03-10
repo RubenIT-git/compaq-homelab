@@ -28,6 +28,7 @@ Gestiono el servidor mediante **CasaOS** y los siguientes servicios en **Docker*
 ```bash
 sudo systemctl stop systemd-resolved
 sudo systemctl disable systemd-resolved
+
 2. Bypass de Credenciales en CasaOS
 Problema: Bloqueo de login por cambio de IP y error en flags de reseteo.
 Solución: Eliminación manual de la base de datos de identidad para forzar un nuevo inicio:
@@ -35,6 +36,7 @@ Solución: Eliminación manual de la base de datos de identidad para forzar un n
 Bash
 sudo rm /var/lib/casaos/db/user.db
 sudo systemctl restart casaos-user-service
+
 3. Red Local (DHCP Maestro)
 Para saltar las restricciones del router ISP (Sagemcom 5670), delegué la autoridad DHCP al servidor:
 
